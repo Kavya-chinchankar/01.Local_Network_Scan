@@ -152,7 +152,7 @@ SMB findings: Message signing is enabled but not required (smb2-security-mode sh
 
 OS detection: Windows 10 (build range 1809–21H2)
 
-
+---
 
 🖼 Screenshots
 
