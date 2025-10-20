@@ -49,11 +49,6 @@ Open ports and running services
 
 5. Saved the scan output as a text/HTML file for submission.
 
-
-
-
----
-
 ---
 
 🔍 Key Concepts Learned
@@ -136,6 +131,27 @@ Completed NSE at 20:53, 14.32s elapsed
 Initiating NSE at 20:53
 Completed NSE at 20:53, 0.05s elapsed
 Initiating NSE at 20:53
+
+---
+
+Interpretation / Findings
+
+Host: 192.168.56.1 (Windows 10)
+
+Open ports & services discovered:
+
+135/tcp — msrpc (Microsoft RPC)
+
+139/tcp — netbios-ssn (NetBIOS Session Service)
+
+445/tcp — microsoft-ds (SMB over TCP)
+
+5357/tcp — http (Microsoft HTTPAPI httpd 2.0 — often used for SSDP/UPnP or other services)
+
+SMB findings: Message signing is enabled but not required (smb2-security-mode shows signing enabled but not required). This means NTLM/SMB connections might not enforce signing — possible risk depending on network context.
+
+OS detection: Windows 10 (build range 1809–21H2)
+
 
 
 🖼 Screenshots
